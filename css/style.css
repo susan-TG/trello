@@ -1,10 +1,18 @@
 nav {
 	background-color: #3DA0FD;
 }
-nav a {
+nav p, a, i{
 	color: white;
+	margin-right: 30px;
+
 }
-a img {
+p img {
 	width: auto;
 	height: 30px;
+	margin-right: 20px;
 } 
+button {
+	background-color: green;
+	color: white;
+	border-radius: 5px;
+}
