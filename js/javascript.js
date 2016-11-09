@@ -1,37 +1,14 @@
-window.addEventListener("load", init);
- 
-var todos = [];
- 
-window.addEventListener("load", init);
- 
-var todos = [];
+// Pasos
+// Agregar clase hidden a mi botón para que desaparezca
+// saco hidden a mi panel para que aparezca
 
-function form(li)
-{
-	//creamos un formulario
-	var todo = document.createElement("a");
-	//href
-    todo.href = "#";
-    //añadimos varias clases
-    todo.classList.add("pull-right");
-    //añadimos el evento click para que sea eliminado
-    todo.onclick = function() 
-    { 
-        var toDelete = document.querySelector('#todo'+li.index);
-		toDelete.parentNode.removeChild(toDelete);
-    };
-    //devolvemos el nuevo elemento
-    
-    var i = document.createElement("i");
-	i.className = 'fa fa-trash fa-2x'; 
+var boton = document.getElementById("agregar-tarea");
+var tarjeta = document.getElementById("tarjeta-tarea");
 
-	todo.appendChild(i);
+boton.addEventListener("click", transformer);
 
-    return todo;
+function transformer() {
+    boton.className = "btn btn-success hidden";
+    tarjeta.className = "panel panel-default";
 }
 
- <input type="text" id="texto" />
-var valor = document.getElementById("texto").value;
- 
-<textarea id="parrafo"></textarea>
-var valor = document.getElementById("parrafo").value;

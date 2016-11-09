@@ -29,39 +29,49 @@
     </nav>
 <!--aca van las tarjetas -->
 	<section>
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="col-xs-12 col-sm-6 col-md-3">
 					<form>
-						<div class="js-add-list list-wrapper mod-add is-idle">
-					</form>
-							<button type="button" id="agregar-tarea" class="btn btn-success">
+						<button type="button" id="agregar-tarea" class="btn btn-success">
 							<i class="fa fa-plus" aria-hidden="true"></i> Agregar tarea
-							</button>
-						</div>
-				</div>
-			</div>
-	</section>
-	<section>
-		<div class="row">
-			<div class="col-xs-3 col-sm-3 col-md-3">
-				<div class="target">
-					<div class="form-group">
-						<div class="panel panel-default">
+						</button>
+						<div class="panel panel-default hidden" id="tarjeta-tarea">
 		  					<div class="panel-heading">
 		    					<h3 class="panel-title">Tareas</h3>
 		  					</div>
 		  					<div class="panel-body">
-		     					<input type="text" id="disabledTextInput" class="form-control" placeholder="Agregar tarea">
+		     					<input type="text" id="disabledTextInput" class="form-control" placeholder="Tarea-nueva">
 		  					</div>
-   							<button type="submit" class="btn btn-primary">Guardar</button>
+		  					<div class="panel-footer clearfix">
+		  						<button type="button" class="btn btn-primary pull-right">Guardar</button>
+		  					</div>
+   							
 						</div>
-			        </div>
-			    </div>
+					</form>
+					<form>
+						<button type="button" id="agregar-tarea" class="btn btn-success">
+							<i class="fa fa-plus" aria-hidden="true"></i> Agregar tarea
+						</button>
+						<div class="panel panel-default hidden" id="tarjeta-tarea">
+		  					<div class="panel-heading">
+		    					<h3 class="panel-title">Tareas</h3>
+		  					</div>
+		  					<div class="panel-body">
+		     					<input type="text" id="disabledTextInput" class="form-control" placeholder="Tarea-nueva">
+		  					</div>
+		  					<div class="panel-footer clearfix">
+		  						<button type="button" class="btn btn-primary pull-right">Guardar</button>
+		  					</div>
+   							
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</section>
 	
 		
-	<script type="text/javascript" href="js/javascript.js"></script>
+	<script type="text/javascript" src="js/javascript.js"></script>
 </body>
 </html>
